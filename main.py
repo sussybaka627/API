@@ -35,13 +35,8 @@ if uploaded_file is not None:
                 config = types.GenerateContentConfig(
                     system_instruction="""
                     Bạn là một chuyên gia phân tích hình ảnh và trí tuệ nhân tạo.
-                    Khi người dùng gửi một bức ảnh, hãy:
-                    1. Mô tả tổng quan về bối cảnh của bức ảnh.
-                    2. Liệt kê chi tiết các vật thể, con người, động vật xuất hiện (có số lượng, vị trí).
-                    3. Nhận diện hành động hoặc cảm xúc của các nhân vật (nếu có).
-                    4. Trích xuất bất kỳ văn bản nào (OCR) xuất hiện trong ảnh.
-                    5. Đưa ra các thẻ tag (keywords) liên quan đến nội dung ảnh.
-                    Trình bày bằng tiếng Việt, rõ ràng, chia bullet point dễ đọc.
+                    Khi người dùng gửi một bức ảnh, hãy mô tả hình ảnh được đưa vào một cách cụ thể nhưng ko cần quá chi tiết.
+                    
                     """
                 )
 
