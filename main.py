@@ -47,7 +47,7 @@ if uploaded_file is not None:
                 # --- GỬI YÊU CẦU LÊN GEMINI ---
                 # Truyền trực tiếp biến `image` và câu lệnh prompt
                 response = client.models.generate_content(
-                    model="gemini-3.1-flash", 
+                    model="gemini-2.5-flash", 
                     contents=[image, "Hãy phân tích nội dung tấm ảnh này một cách chi tiết nhất."],
                     config=config
                 )
