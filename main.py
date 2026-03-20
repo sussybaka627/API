@@ -10,7 +10,7 @@ st.title("👁️ Gemini Vision Analyzer - Phân tích ảnh thông minh")
 
 # --- 2. QUẢN LÝ API KEY (BẢO MẬT) ---
 # Lấy API Key từ cơ chế Secret của Streamlit
-api_key = st.secrets["GEMINI_API_KEY"]
+api_key = st.secrets["AIzaSyDQKQJ-0HjjL7FB7-aNeX0nb9SUqE0Bcms"]
 client = genai.Client(api_key=api_key)
 
 # --- 3. SYSTEM INSTRUCTION (HỒN CỦA CON BOT) ---
