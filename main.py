@@ -24,6 +24,7 @@ uploaded_file = st.file_uploader("Tải lên ảnh cần phân tích (PNG, JPG, 
 if uploaded_file is not None:
     # Mở và hiển thị ảnh bằng PIL
     image = Image.open(uploaded_file)
+    image.thumbnail((1024, 1024))
     st.image(image, caption='Ảnh đã tải lên', use_container_width=True)
     
     # Nút bấm để bắt đầu phân tích
